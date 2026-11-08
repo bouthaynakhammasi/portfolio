@@ -5,6 +5,7 @@
     /* Refined Netflix Theme */
     --netflix-red: #E50914;
     --netflix-red-darker: #b30710;
+    --netflix-red-bright: #ff1f2b;
 
     /* Structured Grey Palette */
     --netflix-dark-bg: #141414;      /* Main background */
@@ -1300,4 +1301,18 @@ footer { text-align: center; padding: 2rem; color: var(--netflix-text-muted); bo
     #education .timeline-item:nth-child(even) .timeline-dot { left: 0; }
     #projects .project-container { grid-template-columns: 1fr; }
     #skills .skills-grid { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+
+    /* Mobile : éviter le débordement horizontal */
+    section h2 { font-size: 1.9rem; letter-spacing: 1px; overflow-wrap: break-word; }
+    .image-wrapper { width: 260px; height: 260px; }
+    .logo { font-size: 1.6rem; }
+    #about .about-container { padding: 1.5rem; }
+    #about .about-principles { padding-left: 0; border-left: none; }
+    .experience-title h3 { font-size: 1.15rem; }
+}
+
+@media (max-width: 420px) {
+    section h2 { font-size: 1.6rem; }
+    .hero-content h1 { font-size: 2.4rem; }
+    .hero-content h2 { font-size: 1.4rem; }
 }
